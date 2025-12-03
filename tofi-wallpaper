@@ -1,0 +1,17 @@
+#!/bin/bash
+
+WALLPAPERS_DIR="$HOME/Wallpaper"
+
+# Listing des images
+FILE=$(find "$WALLPAPERS_DIR" -type f -iregex ".*\.\(jpg\|jpeg\|png\|bmp\|webp\)" |
+  sort |
+  tofi --prompt-text "Wallpaper : ")
+
+# Quitter si rien choisi
+[ -z "$FILE" ] && exit
+
+# Appliquer avec wal
+wal -i "$FILE"
+
+# (Optionnel) mettre le wallpaper avec hyprpaper si tu l'utilises
+# hyprctl hyprpaper wallpaper "eDP-1,$FILE"

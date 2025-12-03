@@ -1,0 +1,76 @@
+@import url("/home/antoine/.cache/wal/colors-waybar.css");
+
+
+@import url("/home/antoine/.cache/wal/colors-waybar.css");
+
+/* Style général */
+* {
+  font-family: "JetBrainsMonoNerdFontMono";
+  font-weight: bold;
+  min-height: 0;
+  font-size: 100%;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+  padding: 1px;
+}
+
+/* Waybar utilise les couleurs pywal */
+window#waybar {
+  background-color: @background;
+  color: @foreground;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.8;
+}
+
+tooltip {
+  opacity: 1;
+  border-radius: 0px;
+  background-color: @background;
+  color: @foreground;
+}
+
+tooltip label {
+  padding: 10px;
+}
+
+/* Modules – couleurs dynamiques */
+#custom-lumi,
+#custom-cava,
+#clock,
+#cpu,
+#memory,
+#mpris,
+#network,
+#pulseaudio,
+#temperature,
+#workspaces,
+#custom-menu,
+#custom-swaync,
+#window {
+  border-radius: 0px;
+  color: @foreground;
+  background-color: transparent;
+  padding: 3px 6px;
+}
+
+/* Workspaces dynamiques */
+#workspaces button {
+  margin: 1px;
+  padding: 3px 6px;
+  border-radius: 0px;
+  background-color: @color1;
+  color: @background;
+}
+
+#workspaces button.active {
+  background-color: @color2;
+  color: @background;
+}
+
+#temperature.critical {
+  background-color: red;
+}
+
