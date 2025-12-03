@@ -38,6 +38,17 @@ copyq = clipboard manager
 
 mirage = screg
 
+lazy vim = text 
+
+
+
+
+
+
+
+
+install WhiteSur-gtk-theme = gtk-theme
+
 Installation :
 
 
@@ -53,26 +64,10 @@ sudo mv fastfetch  hypr  kitty  tofi  wal  waybar  ~/.config
 
 cd ..
 
-
 sudo cp tofi-wallpaper ~/.local/bin/
 
+cd
 
 cp -r $HOME/dotfiles/Wallpaper $HOME
-[text.txt](https://github.com/user-attachments/files/23915859/text.txt)
-enshot tool
 
 
-
-
-
-
-lazy vim = text 
-
-
-
-
-
-
-
-
-install WhiteSur-gtk-theme = gtk-theme
